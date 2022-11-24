@@ -12,7 +12,7 @@ public class Gerade {
 
         //Eingabe
         Scanner sc= new Scanner(System.in);
-        double xa,xb,xc,ya,yb,yc,t,d,k;
+        double xa,xb,xc,ya,yb,yc,p,d,k;
 
         System.out.print("Gib den Punkt xa ein:");
         xa = sc.nextDouble();
@@ -25,8 +25,12 @@ public class Gerade {
         System.out.print("Gib den Punkt xc ein:");
         xc = sc.nextDouble();
         System.out.print("Gib den Punkt yc ein:");
+        yc = sc.nextDouble();
 
-        t = 0.1;
+        p = 0.1;
+
+        k = (ya+yb)/(xa-xb);
+        d = (-k)*xa+ya;
 
 
 
