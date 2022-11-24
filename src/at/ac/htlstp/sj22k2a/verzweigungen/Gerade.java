@@ -32,13 +32,13 @@ public class Gerade {
         k = (ya+yb)/(xa-xb);
         d = (-k)*xa+ya;
 
-        if ((k*xc+d == yc)) {
-            System.out.print(" Der Punkt C liegt auf der Geraden.");
-        } else if ((ya<yc && yb<yc)||(xa<xc && xb<xc)||(ya>yc && yb>yc)||(xa>xb && xb>xc)) {
+
+
+        if ((ya<yc && yb<yc)||(xa<xc && xb<xc)||(ya>yc && yb>yc)||(xa>xb && xb>xc)) {
             System.out.print("Der Punkt C liegt außerhalb der Gerade");
         } else {
-            System.out.print("Der Punkt liegt innerhalb der Geraden");
-        }
+                System.out.print("Der Punkt liegt auf der Geraden");
+            }
 
 
 
